@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>$pooky Hunter's Home Page</title>
+<meta http-equiv="Content-Language" content="Italian" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="SHORTCUT ICON" href="images/favicon.png">
+</head>
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+<div class="header">
+<div align="center">
+<h1><a href="med.html">$pooky Hunter Nemus</a></h1>
+<h2>Venera l'orso seducendolo con il cibo</h2>
+</div>
+</div>
+
+<div class="breadcrumbs">
+<a href="index.php">Home</a> &middot;
+<a href="http://golem.linux.it/wiki/Howto" title="Guide" target="_blank">Guide</a> &middot;
+<a href="informatica.html">Informatica</a> &middot;
+<a href="neworder.html">Neworder</a>
+</div>
+
+<div class="middle">
+<div align="center">
+<br><h2>Benvenuto 
+<br>
+<?php
+$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+echo $hostname;
+?>
+<div class="ip">
+<div id="ip-address"></div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+$(document).ready(function() {
+	$.getJSON('https://jsonip.com?callback=?', function (data) {
+      $('#ip-address').text(data.ip);
+  });	
+});
+</script>
+
+</h2></b></div>
+<br>
+<a href="https://wiki.golem.linux.it/Appunti_Arch_Linux" target="_blank"> Appunti Arch Linux </a>
+<br>
+<br>
+<a href="https://wiki.golem.linux.it/Storia_dei_sistemi_UNIX" target="_blank"> Storia dei sistemi UNIX </a>
+<br>
+<br>
+<a href="https://wiki.golem.linux.it/FreeDOS_Networking" target="_blank"> DOS Networking </a>
+<br>
+<br>
+<a href="https://www.tuhs.org/Archive/" target="_blank"> UNIX History archive </a>
+<br>
+<font size="-1">Linux, *BSD, Solaris, SCO & various elderly UNIX OS</font>
+<br>
+<br>
+<a href="https://minnie.tuhs.org/Unix_History/index.html"> UNIX History Graphing Project </a>
+<br>
+<font size="-1">List of release dates and dependencies for most of the ancient UNIX</font>
+<br>
+<br>
+
+
+<div align="center"><a href="http://golem.linux.it"title="Gruppo Operativo Linux EMpoli">
+<img src="images/golem_logo.png" alt="GOLEM"></a>
+</div>
+
+ </div>
+
+<div class="right">
+
+<h2>Links</h2>
+<ul>
+<li><a href="https://www.archlinux.org/" title="A lightweight and flexible linux distribution that tries to Keep It Simple." target="_blank">Arch Linux</a></li>
+<li><a href="https://nixos.org/manual/nixos/stable/index.html" title="Manuale NixOS" target="_blank">NixOS Man</a></li>
+<li><a href="https://www.debian.org/distrib/packages" title="Pacchetti Debian" target="_blank">Debian pkgs</a></li>
+<li><a href="http://www.distrowatch.com" title="Info sulle distribuzioni Linux" target="_blank">Distrowatch</a></li>
+<li><a href="https://chat.deepseek.com/" title="Intelligenza Artificiale" target="_blank">DeepSeek</a></li>
+<li><a href="https://web.archive.org/" title="Internet Archive" target="_blank">Internet Archive</a></li>
+<li><a href="https://www.cpubenchmark.net/" title="Benchmarking" target="_blank">Benchmark</a></li>
+<li><a href="http://www.phoronix.com" title="Linux Hardware Reviews, Benchmarking, &amp; Gaming" target="_blank">Phoronix</a></li>
+<li><a href="https://temp-mail.io" title="Temporary Email" target="_blank">Temporary Email</a></li>
+</ul>
+
+<h2>Altro</h2>
+<ul>
+<li><a href="https://www.ansa.it/" title="News" target="_blank">ANSA</a></li>
+<li><a href="https://edition.cnn.com/" title="CNN International" target="_blank">CNN</a></li>
+<li><a href="https://www.rainews.it/notiziari/rainews24" title="RAI News 24" target="_blank">RAI News 24</a></li>
+<li><a href="http://englishrussia.com" title="English Russia" target="_blank">English Russia</a></li>
+<li><a href="https://libgen.li/" title="Library Genesys" target="_blank">Library Genesys</a></li>
+<li><a href="molosso.html" title="Molossoidi da guardia/difesa">Il Molosso</a></li>
+</ul>
+
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="bottom"></div>
+
+</div>
+<div id="footer">
+<a href="http://www.kernel.org" target="_blank"> <img src="images/linux.png" alt="Use Linux"></a>
+<a href="mailto:spookyh+sito@gmail.com"> <img src="images/mail.png" alt="Mail me"></a>
+<a href="https://keyserver.ubuntu.com/pks/lookup?search=0x9DF79404AEB75693&fingerprint=on&op=index" target="_blank"> <img src="images/pgpkey.gif" alt="My GPG Public Key"></a>
+<a href="http://msh4m7ufvt4h6k3whw7e22hrfmp2hxsfbltzjw5jhj4wwpog42zyf7qd.onion/"> <img src="images/onion-mirror.png" alt="Onion Mirror">
+
+</div>
+
+</body>
+</html>
